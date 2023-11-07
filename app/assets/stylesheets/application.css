@@ -1,15 +1,123 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* app/assets/stylesheets/application.css */
+/* または適切なスタイルシートファイル */
+
+/* 全体のテーブルスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* thとtdのスタイル */
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* thのスタイル */
+  th {
+    background-color: #f8f8f8;
+  }
+  
+  /* テーブル行のホバースタイル */
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* h1のスタイル */
+  h1 {
+    color: #333;
+    font-size: 24px;
+  }
+
+/* 以下、フォーム関連のスタイル */
+
+/* エラー説明のスタイル */
+#error_explanation {
+    color: #cc0000;
+    padding: 15px;
+    border: 2px solid #cc0000;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    background: #f2dede;
+  }
+  
+  /* エラーメッセージリストのスタイル */
+  #error_explanation h2 {
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  #error_explanation ul {
+    list-style-type: square;
+  }
+  
+  #error_explanation li {
+    margin: 5px 0;
+    color: #cc0000;
+  }
+  
+  /* フォームフィールド全体のスタイル */
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  /* ラベルのスタイル */
+  label {
+    display: block;
+    margin-bottom: .5em;
+    color: #333;
+  }
+  
+  /* テキストフィールドのスタイル */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+  }
+  
+  /* テキストエリアのスタイル */
+  textarea {
+    height: 150px;
+  }
+  
+  /* アクション（送信ボタン）のスタイル */
+  .actions {
+    margin-top: 20px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 15px;
+    color: white;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* エラーがあるフィールドを強調表示するスタイル */
+  .field_with_errors {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .field_with_errors label {
+    color: #cc0000;
+  }
+  
+  .field_with_errors input[type="text"],
+  .field_with_errors textarea {
+    border-color: #cc0000;
+  }
+  
