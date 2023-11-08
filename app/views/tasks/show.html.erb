@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.content %></p>
+
+<div class="button-group">
+  <%= link_to '更新', edit_task_path(@task), method: :get, class: 'button', style: 'margin-right: 10px;' %>
+  <%= form_with(model: @task, method: :delete, local: true) do |form| %>
+    <%= form.submit '削除', data: { confirm: '本当に削除しますか？' }, class: 'button', style: 'margin-right: 10px;' %>
+  <% end %>  
+  <%= link_to '戻る', tasks_path, class: 'button' %>
+</div>

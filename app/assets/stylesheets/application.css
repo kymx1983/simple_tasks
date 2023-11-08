@@ -106,6 +106,24 @@ body {
     font-size: 16px;
     transition: background-color 0.3s; /* スムーズな背景色の変更のために */
   }
+
+  .button-group {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    color: white;
+    background-color: #666;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  
   
   input[type="submit"]:hover {
     background-color: #777; /* ホバー時の色を変更します */
