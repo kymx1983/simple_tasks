@@ -1,11 +1,18 @@
 /* app/assets/stylesheets/application.css */
 /* または適切なスタイルシートファイル */
 
-/* 全体のテーブルスタイル */
-table {
+body {
+    background-color: #333; /* 背景色を暗くします */
+    color: #fff; /* テキストカラーを白にします */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 全体のテーブルスタイル */
+  table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    color: #fff; /* テキストカラーを白にします */
   }
   
   /* thとtdのスタイル */
@@ -13,50 +20,45 @@ table {
   td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555; /* ボーダーを暗めにします */
   }
   
   /* thのスタイル */
   th {
-    background-color: #f8f8f8;
+    background-color: #444; /* 色を暗くします */
   }
   
   /* テーブル行のホバースタイル */
   tr:hover {
-    background-color: #f2f2f2;
+    background-color: #555; /* ホバー時の色を暗めにします */
   }
   
   /* h1のスタイル */
   h1 {
-    color: #333;
+    color: #fff; /* テキストカラーを白にします */
     font-size: 24px;
+    border-bottom: 2px solid #555; /* タイトルの下線を暗めにします */
+    padding-bottom: 10px;
   }
-
-/* 以下、フォーム関連のスタイル */
-
-/* エラー説明のスタイル */
-#error_explanation {
-    color: #cc0000;
+  
+  /* エラー説明のスタイル */
+  #error_explanation {
+    color: #ffaaaa; /* エラーの色をやや明るめにします */
     padding: 15px;
-    border: 2px solid #cc0000;
+    border: 2px solid #ffaaaa;
     border-radius: 7px;
     margin-bottom: 20px;
-    background: #f2dede;
+    background: #555; /* 背景色を暗くします */
   }
   
   /* エラーメッセージリストのスタイル */
-  #error_explanation h2 {
-    text-align: left;
-    margin-top: 0;
-  }
-  
   #error_explanation ul {
     list-style-type: square;
   }
   
   #error_explanation li {
     margin: 5px 0;
-    color: #cc0000;
+    color: #ffaaaa;
   }
   
   /* フォームフィールド全体のスタイル */
@@ -68,7 +70,7 @@ table {
   label {
     display: block;
     margin-bottom: .5em;
-    color: #333;
+    color: #ccc; /* ラベルの色を薄いグレーにします */
   }
   
   /* テキストフィールドのスタイル */
@@ -76,8 +78,10 @@ table {
   textarea {
     width: 100%;
     padding: .5em;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 4px;
+    background-color: #222; /* 背景色を暗くします */
+    color: #ddd; /* テキストカラーを薄いグレーにします */
     box-sizing: border-box;
     margin-bottom: 1em;
   }
@@ -95,15 +99,16 @@ table {
   input[type="submit"] {
     padding: 10px 15px;
     color: white;
-    background-color: #5cb85c;
+    background-color: #666; /* ボタンの背景色を暗めにします */
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s; /* スムーズな背景色の変更のために */
   }
   
   input[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #777; /* ホバー時の色を変更します */
   }
   
   /* エラーがあるフィールドを強調表示するスタイル */
@@ -120,4 +125,22 @@ table {
   .field_with_errors textarea {
     border-color: #cc0000;
   }
+  
+  /* リンクの基本スタイル */
+a {
+    color: #9cf; /* 明るい青色でリンクを表示 */
+    text-decoration: none; /* 下線をなくす */
+  }
+  
+  /* リンクにマウスがホバーした時のスタイル */
+  a:hover {
+    color: #cfc; /* ホバー時は明るい緑色に変更 */
+    text-decoration: underline; /* 下線を表示する */
+  }
+  
+  /* 訪問済みリンクのスタイル
+  a:visited {
+    color: #999;
+  } 
+  */
   
